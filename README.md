@@ -14,7 +14,7 @@
 
 ### Este documento proporciona una guía detallada sobre la implementación y uso del Consultor de Belleza, abordando aspectos técnicos, métodos de entrenamiento del modelo y detalles sobre la interfaz del usuario.
 
-## Interacción de Datos
+## 1. Interacción de Datos
 
 En el contexto del Consultor de Belleza, se utilizan dos conjuntos de datos clave que proporcionan información esencial sobre los usuarios y los productos. A continuación, se describen estos conjuntos y cómo interactúan:
 
@@ -74,7 +74,7 @@ Para mejorar las recomendaciones, se realiza una unión entre los conjuntos de d
 
 Esta unión de datos proporciona una base completa para el entrenamiento y la generación de recomendaciones personalizadas.
 
-## Preparación del Conjunto de Datos
+## 2. Preparación del Conjunto de Datos
 
 Durante la preparación del conjunto de datos para el modelo del Consultor de Belleza, se llevan a cabo los siguientes pasos utilizando las clases proporcionadas por la biblioteca Surprise:
 
@@ -87,4 +87,14 @@ Se emplea la clase `Reader` para especificar la escala de calificación, que en 
 Utilizando la clase `Dataset`, se carga el conjunto de datos desde el dataframe. Se seleccionan las columnas relevantes, como `Name_Group_Num`, `Textura_Piel_Num`, `Brillo_Piel_Num`, etc. Esta clase facilita la representación y manipulación eficientes de los datos, preparándolos para su uso en el modelo de recomendación.
 
 Estos pasos son fundamentales para garantizar que los datos sean adecuadamente interpretados por el modelo y que la información relevante se incorpore de manera efectiva en el proceso de recomendación del Consultor de Belleza.
+
+## 3. Definición y Ajuste de Hiperparámetros
+
+Antes de entrenar el modelo, se definen los hiperparámetros que serán ajustados para optimizar el rendimiento del algoritmo de recomendación. Para lograr esto, se utiliza la técnica de búsqueda de cuadrícula (GridSearch), donde se exploran diversas combinaciones de hiperparámetros para encontrar los valores óptimos.
+
+## 4. División del Conjunto de Datos
+
+El conjunto de datos se divide en conjuntos de entrenamiento y prueba para evaluar el rendimiento del modelo. Esta división garantiza que el modelo sea evaluado de manera imparcial en datos no vistos durante el entrenamiento, lo que ayuda a estimar su capacidad de generalización.
+
+
 
