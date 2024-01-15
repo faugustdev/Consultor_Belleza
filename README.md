@@ -106,4 +106,6 @@ En esta etapa, se selecciona el algoritmo de recomendación, siendo SVD una elec
 
 Estos pasos son cruciales para establecer la capacidad predictiva del modelo y asegurar que esté listo para realizar recomendaciones personalizadas basadas en las preferencias del usuario y las características de los productos.
 
-
+## 6. Generación de Recomendaciones:
+Después de entrenar el modelo, se pueden generar recomendaciones para usuarios específicos.
+Las recomendaciones se generan utilizando funciones proporcionadas por la biblioteca de recomendación.
