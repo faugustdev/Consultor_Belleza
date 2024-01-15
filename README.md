@@ -96,5 +96,14 @@ Antes de entrenar el modelo, se definen los hiperparámetros que serán ajustado
 
 El conjunto de datos se divide en conjuntos de entrenamiento y prueba para evaluar el rendimiento del modelo. Esta división garantiza que el modelo sea evaluado de manera imparcial en datos no vistos durante el entrenamiento, lo que ayuda a estimar su capacidad de generalización.
 
+## 5. Entrenamiento del Modelo
+
+En esta etapa, se selecciona el algoritmo de recomendación, siendo SVD una elección común debido a su eficacia en problemas de filtrado colaborativo. El proceso de entrenamiento se realiza de la siguiente manera:
+
+- **Selección del Algoritmo:** Se elige el algoritmo, en este caso, SVD.
+- **Instanciación del Modelo:** Se crea una instancia del modelo utilizando la implementación proporcionada por la biblioteca.
+- **Entrenamiento:** El modelo se entrena utilizando el conjunto de entrenamiento. Durante este proceso, el algoritmo ajusta sus parámetros internos para aprender patrones y relaciones en los datos.
+
+Estos pasos son cruciales para establecer la capacidad predictiva del modelo y asegurar que esté listo para realizar recomendaciones personalizadas basadas en las preferencias del usuario y las características de los productos.
 
 
