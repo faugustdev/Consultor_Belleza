@@ -74,3 +74,17 @@ Para mejorar las recomendaciones, se realiza una unión entre los conjuntos de d
 
 Esta unión de datos proporciona una base completa para el entrenamiento y la generación de recomendaciones personalizadas.
 
+## Preparación del Conjunto de Datos
+
+Durante la preparación del conjunto de datos para el modelo del Consultor de Belleza, se llevan a cabo los siguientes pasos utilizando las clases proporcionadas por la biblioteca Surprise:
+
+### Reader
+
+Se emplea la clase `Reader` para especificar la escala de calificación, que en este caso va de 1 a 14. La clase `Reader` también permite configurar otros aspectos relacionados con los datos, proporcionando una estructura clara para la interpretación de las calificaciones.
+
+### Dataset
+
+Utilizando la clase `Dataset`, se carga el conjunto de datos desde el dataframe. Se seleccionan las columnas relevantes, como `Name_Group_Num`, `Textura_Piel_Num`, `Brillo_Piel_Num`, etc. Esta clase facilita la representación y manipulación eficientes de los datos, preparándolos para su uso en el modelo de recomendación.
+
+Estos pasos son fundamentales para garantizar que los datos sean adecuadamente interpretados por el modelo y que la información relevante se incorpore de manera efectiva en el proceso de recomendación del Consultor de Belleza.
+
